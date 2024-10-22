@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+
+/* Backgound image and Nav-Bar Start */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 45px;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+select {
+    color: white;
+    padding: 6px 18px;
+    border-radius: 4px;
+    background-color: black;
+    border: 1px solid gray;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a {
+    display: inline-block;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(182, 0, 9);
+}
+
+/* Backgound image and Nav-Bar End */
+
+/* Central elements Start */
+
+.center {
+    text-align: center;
+    padding: 128px 0px 0px 0px;
+}
+
+h1,
+p,
+h3 {
+    color: white;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.row-Area{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 18px 24px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid gray;
+    color: white;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#btn {
+    padding: 14px 32px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#btn:hover {
+    background-color: rgb(182, 0, 9);
+}
+
+.white {
+    color: white;
+    font-size: 18px;
+}
+
+/* Central elements End */
