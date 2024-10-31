@@ -139,6 +139,12 @@ h2 {
     color: white;
 }
 
+.heading{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+/* More Reasons to Join section started */
 .cards {
     display: flex;
     gap: 16px;
@@ -165,3 +171,60 @@ h2 {
     right: 10%;
     font-size: 30px;
 }
+/* More Reasons to Join section end */
+
+
+
+/* Frequently Asked Questions section started */
+
+.question ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.size{
+    width: 30px;
+}
+
+ul li button{
+    background-color: #303030;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+ul li button:hover{
+    background-color: #4b4a4a;
+    transition: 0.7s;
+}
+
+.qst{
+    margin-top: 10px;
+}
+
+.hidden{
+    background-color: #303030;
+    border-radius: 16px;
+    padding: 20px;
+    display: none;
+}
+
+.hidden p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.margin{
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+/* Frequently Asked Questions section end*/

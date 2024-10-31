@@ -1,81 +1,37 @@
+const btn1 = document.getElementById("qst1");
+const btn2 = document.getElementById("qst2");
+const btn3 = document.getElementById("qst3");
+const btn4 = document.getElementById("qst4");
+const btn5 = document.getElementById("qst5");
+const btn6 = document.getElementById("qst6");
+const btn7 = document.getElementById("qst7");
 
-// var container = document.getElementById("container");
-// var slider = document.getElementById("slider");
-// var slides = document.getElementsByClassName("slide").length;
-// var buttons = document.getElementsByClassName("btn");
+let list = document.querySelector(".qst");
 
-// var currentPosition = 0;
-// var currentMargin = 0;
-// var slidesPerPage = 0;
-// var slidesCount = slides - slidesPerPage;
-// var containerWidth = container.offsetWidth; //1400 
-// var prevKeyActive = false;
-// var nextKeyActive = true;
 
-// window.addEventListener("resize", checkWidth);
 
-// function checkWidth() {
-//   containerWidth = container.offsetWidth;
-//   setParams(containerWidth);
-// }
+btn1.addEventListener("click", destroy);
+btn2.addEventListener("click", destroy);
+btn3.addEventListener("click", destroy);
+btn4.addEventListener("click", destroy);
+btn5.addEventListener("click", destroy);
+btn6.addEventListener("click", destroy);
+btn7.addEventListener("click", destroy);
 
-// function setParams(w) {
-//   if (w < 551) {
-//     slidesPerPage = 1;
-//   } else {
-//     if (w < 901) {
-//       slidesPerPage = 2;
-//     } else {
-//       if (w < 1101) {
-//         slidesPerPage = 3;
-//       } else {
-//         slidesPerPage = 4;
-//       }
-//     }
-//   }
-//   slidesCount = slides - slidesPerPage;
-//   if (currentPosition > slidesCount) {
-//     currentPosition -= slidesPerPage;
-//   }
-//   currentMargin = -currentPosition * (100 / slidesPerPage);
-//   slider.style.marginLeft = currentMargin + "%";
-//   if (currentPosition > 0) {
-//     buttons[0].classList.remove("inactive");
-//   }
-//   if (currentPosition < slidesCount) {
-//     buttons[1].classList.remove("inactive");
-//   }
-//   if (currentPosition >= slidesCount) {
-//     buttons[1].classList.add("inactive");
-//   }
-// }
 
-// setParams();
-
-// function slideRight() {
-//   if (currentPosition != 0) {
-//     slider.style.marginLeft = currentMargin + 100 / slidesPerPage + "%";
-//     currentMargin += 100 / slidesPerPage;
-//     currentPosition--;
-//   }
-//   if (currentPosition === 0) {
-//     buttons[0].classList.add("inactive");
-//   }
-//   if (currentPosition < slidesCount) {
-//     buttons[1].classList.remove("inactive");
-//   }
-// }
-
-// function slideLeft() {
-//   if (currentPosition != slidesCount) {
-//     slider.style.marginLeft = currentMargin - 100 / slidesPerPage + "%";
-//     currentMargin -= 100 / slidesPerPage;
-//     currentPosition++;
-//   }
-//   if (currentPosition == slidesCount) {
-//     buttons[1].classList.add("inactive");
-//   }
-//   if (currentPosition > 0) {
-//     buttons[0].classList.remove("inactive");
-//   }
-// }
+function destroy(){
+    list.forEach(answer => {
+        if(answer.lastElementChild.style.display == "block" && answer.firstElementChild != this){
+            answer.firstElementChild.lastElementChild.style.transform = "rotate(0deg)";
+            answer.lastElementChild.style.display = "none";
+        }
+    });
+    let element = this.nextElementSibling;
+    if(element.style.display == "none"){
+        this.lastElementChild.style.transform = "rotate(45deg)";
+        element.style.display = "block";
+    }else{
+        this.lastElementChild.style.transform = "rotate(0deg)";
+        element.style.display = "none";
+    }
+}
