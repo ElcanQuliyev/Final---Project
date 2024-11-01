@@ -6,8 +6,7 @@ const btn5 = document.getElementById("qst5");
 const btn6 = document.getElementById("qst6");
 const btn7 = document.getElementById("qst7");
 
-let list = document.querySelector(".qst");
-
+let list = document.querySelectorAll(".qst");
 
 
 btn1.addEventListener("click", destroy);
