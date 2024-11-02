@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Css/common.css" />
+    <link rel="stylesheet" href="Css/login.css" />
+    <link
+      rel="shortcut icon"
+      href="images/images logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Logo in Nav area  -->
+      <nav class="container">
+        <a href="index.html"
+          ><img src="images/Netflix_2015_logo.svg" alt="" class="logo"
+        /></a>
+      </nav>
+
+      <!-- Center section started -->
+      <div class="center">
+        <div class="sign-in">
+          <h1>Sign In</h1>
+          <form action="">
+            <input type="text" name="text" id="text-input" placeholder="Email or mobile number" required/>
+            <input type="password" name="password" id="password" placeholder="Password" required/>
+            <button id="btn-1">Sign In</button>
+            <p>OR</p>
+            <button id="btn-2">Use a Sign-In Code</button>
+            <a href="#" class="password-link">Forgot password?</a>
+          </form>
+          <input type="checkbox" name="checkbox" id="checkbox-input" />
+          <label for="checkbox">Remember Me</label>
+          <div class="row-Area-1">
+            <h4>New to Netflix?</h4>
+            <a href="#" class="sign-now">Sign up now</a>
+          </div>
+          <div class="row-Area-2">
+            <p class="learn-more">
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot.<button id="btn-3">Learn more.</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section started -->
+    <footer class="container">
+      <a href="#" class="footer-links">Questions? Contact us.</a>
+      <div class="links">
+        <div class="link">
+          <a href="#">FAQ</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+        <div class="link">
+          <a href="#">Help Center</a>
+          <a href="#">Corporate Information</a>
+        </div>
+        <div class="link">
+          <a href="#">Terms of Use</a>
+        </div>
+        <div class="link">
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+      <select name="lang" id="language">
+        <option value="eng" selected>English</option>
+        <option value="rus">Русский</option>
+      </select>
+    </footer>
+  </body>
+</html>

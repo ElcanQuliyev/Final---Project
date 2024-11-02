@@ -1,0 +1,219 @@
+body {
+    background-color: black;
+}
+
+/* Header start */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    padding: 24px 45px;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+}
+
+/* Header end */
+
+
+/* Center section start */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    width: 35%;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+::placeholder{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#btn-1 {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#btn-1:hover {
+    background-color: rgb(255, 44, 44);
+}
+
+#btn-2:hover {
+    background-color: #383838;
+}
+
+
+p {
+    margin: 0px;
+    text-align: center;
+}
+
+#btn-2 {
+    background-color: #444444;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.password-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.password-link:hover {
+    text-decoration: underline;
+    color: #797979;
+}
+
+.row-Area-1 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.sign-now {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.sign-now:hover {
+    text-decoration: underline;
+}
+
+.row-Area-2 {
+    display: flex;
+
+}
+
+.learn-more {
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+}
+
+#btn-3 {
+    color: #0071eb;
+    border: none;
+    background-color: transparent;
+}
+
+#btn-3:hover {
+    text-decoration: underline;
+}
+
+
+h1,
+label {
+    color: white;
+}
+
+h4,
+p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Center section end */
+
+
+/* Footer start */
+
+footer {
+    margin-top: 40px;
+    padding: 148px 45px 24px;
+}
+
+.footer-links{
+    text-decoration: none;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    gap: 128px;
+    margin-top: 40px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+select {
+    color: white;
+    padding: 6px 18px;
+    border-radius: 4px;
+    background-color: black;
+    border: 1px solid gray;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* Footer end */

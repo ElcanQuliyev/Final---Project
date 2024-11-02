@@ -40,7 +40,7 @@ select {
     font-weight: 700;
 }
 
-a {
+.sign-in {
     display: inline-block;
     background-color: rgb(229, 9, 20);
     color: white;
@@ -49,7 +49,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.sign-in:hover {
     background-color: rgb(182, 0, 9);
 }
 
@@ -139,7 +139,7 @@ h2 {
     color: white;
 }
 
-.heading{
+.heading {
     margin-top: 40px;
     margin-bottom: 0px;
 }
@@ -171,23 +171,24 @@ h2 {
     right: 10%;
     font-size: 30px;
 }
+
 /* More Reasons to Join section end */
 
 
 
 /* Frequently Asked Questions section started */
 
-.question ul{
+.faq-question ul {
     list-style: none;
     padding: 0px;
 }
 
-.size{
+.size {
     width: 30px;
     transition: all 0.4s ease;
 }
 
-ul li button{
+ul li button {
     background-color: #303030;
     width: 100%;
     display: flex;
@@ -202,30 +203,63 @@ ul li button{
     margin-bottom: 10px;
 }
 
-ul li button:hover{
+ul li button:hover {
     background-color: #4b4a4a;
     transition: 0.7s;
 }
 
-.qst{
+.qst {
     margin-top: 10px;
 }
 
-.hidden{
+.faq-description {
     background-color: #303030;
     border-radius: 16px;
     padding: 20px;
     display: none;
 }
 
-.hidden p{
+.faq-description p {
     font-size: 18px;
     font-weight: 500;
 }
 
-.margin{
+.style-p {
     margin-bottom: 16px;
     margin-top: 5px;
 }
 
 /* Frequently Asked Questions section end*/
+
+/* Footer start */
+
+footer {
+    margin-top: 40px;
+}
+
+.links {
+    display: flex;
+    gap: 128px;
+    margin-top: 40px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-href {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+/* Footer end */
