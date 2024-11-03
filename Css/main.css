@@ -231,6 +231,29 @@ ul li button:hover {
 
 /* Frequently Asked Questions section end*/
 
+/*Get Started section started */
+.button{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#started-btn{
+    border: none;
+    background-color: red;
+    border-radius: 24px;
+    color: white;
+    padding: 14px 40px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#started-btn:hover{
+    background-color: rgb(255, 44, 44);
+}
+
+/*Get Started section end */
+
 /* Footer start */
 
 footer {
