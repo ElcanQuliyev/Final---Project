@@ -207,6 +207,32 @@ function get_data(m_other_data) {
   });
 }
 
+function get_data(show_English_data) {
+  show_English_data.forEach((movies) => {
+    const m_img = movies.photo;
+    const slide = document.createElement("div");
+    card.className = "slide";
+    card.innerHTML = `
+        <img src='${m_img}' alt=${title}>
+        `;
+    slideshow_container.appendChild(slide);
+    return slideshow_container;
+  });
+}
+
+function get_data(show_Other_data) {
+  show_Other_data.forEach((movies) => {
+    const m_img = movies.photo;
+    const slide = document.createElement("div");
+    card.className = "slide";
+    card.innerHTML = `
+        <img src='${m_img}' alt=${title}>
+        `;
+    slideshow_container.appendChild(slide);
+    return slideshow_container;
+  });
+}
+
 movies.addEventListener("click", () => {
   movies.addEventListener("change", () => {
     if (movies.value === "lang-1") {
