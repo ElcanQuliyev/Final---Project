@@ -102,7 +102,7 @@ input {
 
 .quickLinks {
     display: flex;
-    gap: 32px;
+    gap: 16px;
     flex-direction: column;
 }
 
@@ -110,13 +110,82 @@ input {
     display: flex;
     align-items: center;
     gap: 16px;
+    border-bottom: 1px solid #221f1f;
+    padding-bottom: 16px;
+}
+
+.quickLink-style{
+    border: none;
 }
 
 h2{
     margin-bottom: 0px;
     margin-top: 40px;
+    border-bottom: 1px solid #221f1f;
+    padding-bottom: 8px;
 }
 
-i {}
+i {
+    color: #221f1f;
+}
 
-.quicklink {}
+.quicklink {
+    color: black;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.quicklink:hover{
+    color: rgb(51, 51, 51);
+}
+
+.quicklink:hover:active{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* Content ended */
+
+
+/* Footer started */
+
+footer{
+    background: linear-gradient(194deg, rgba(155,21,28,1) 0%, rgba(155,21,28,1) 0%, rgba(0,0,0,1) 44%);
+    margin-top: 30px;
+}
+
+.footerlinks{
+    padding: 16px 200px;
+}
+
+select{
+    width: 30%;
+    padding: 14px;
+    background-color: transparent;
+    color: gray;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.links{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.links a{
+    color: rgba(255, 255, 255, .7);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+/* Footer ended */
