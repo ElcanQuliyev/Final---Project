@@ -1,0 +1,106 @@
+/* Header start */
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    padding: 16px 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    border-right: 1px solid white;
+    padding: 0px 18px 0px 0px;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+.help-center {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.help-center:hover {
+    text-decoration: underline;
+}
+
+.right-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.join-link {
+    display: inline-block;
+    border: 1px solid gray;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.join-link:hover {
+    border: 1px solid white;
+}
+
+.sign-in {
+    display: inline-block;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sign-in:hover {
+    background-color: rgb(182, 0, 9);
+}
+
+/* Header ended */
+
+/* Content started */
+.content{
+    padding: 16px 64px;
+}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+i{
+    color: #221f1f;
+}
+
+.back-home{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.back-home:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+h1{
+    font-size: 40px;
+}
+
+/* Content ended */
