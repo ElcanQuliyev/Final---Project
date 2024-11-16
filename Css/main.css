@@ -151,9 +151,46 @@ h2 {
     padding: 8px;
 }
 
-.left-arrow {}
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow: scroll;
+}
 
-#left-arrow {}
+.slide {
+    margin-top: 20px;
+}
+
+.slide img{
+    width: 150px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.slide img:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+
+#left-btn{
+    position: absolute;
+    left: 9%;
+    translate: -50% -50%;
+    height: 70px;
+    border-radius: 16px;
+}
+
+#right-btn{
+    position: absolute;
+    right: 7%;
+    translate: -50% -50%;
+    height: 70px;
+    border-radius: 16px;
+}
+
+
 
 
 

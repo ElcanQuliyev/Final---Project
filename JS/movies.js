@@ -76,57 +76,57 @@ const show_English_data = [
     release_year: 2024,
     description:
       "A drama series about Kimmie, struggling to survive after being forced out of her home, and Mallory, who runs a successful company. Their lives intertwine in unexpected ways.",
-    image: "Image available but not provided here.",
+    image: "../images/tv1.webp",
   },
   {
     title: "Territory",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/tv2.webp",
   },
   {
     title: "The Diplomat",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/tv3.webp",
   },
   {
     title: "This Is the Zodiac Speaking",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/tv4.webp",
   },
   {
     title: "The Lincoln Lawyer",
     release_year: 2022,
     description:
       "A legal drama series following Mickey Haller, a defense attorney who works out of his Lincoln Town Car.",
-    image: "Image available but not provided here.",
+    image: "../images/tv5.webp",
   },
   {
     title: "The Manhattan Alien Abduction",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/tv6.webp",
   },
   {
     title: "Nobody Wants This",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/tv7.webp",
   },
   {
     title: "Outer Banks",
     release_year: 2020,
     description:
       "An adventure series about a group of teens called 'Pogues' on a treasure hunt that takes them through dangerous waters.",
-    image: "Image available but not provided here.",
+    image: "../images/tv8.webp",
   },
   {
     title: "Monsters",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/tv9.webp",
   },
 ];
 
@@ -136,111 +136,92 @@ const show_Other_data = [
     release_year: 2024,
     description:
       "A Polish crime thriller series about a former elite police officer turned security guard who faces financial trouble and uncovers a risky opportunity.",
-    image: "Image not provided.",
+    image: "../images/show1.webp",
   },
   {
     title: "DAN DA DAN",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/show2.webp",
   },
   {
     title: "Don’t Come Home",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/show3.webp",
   },
   {
     title: "Murder Mindfully",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/show4.webp",
   },
   {
     title: "Hellbound",
     release_year: 2021,
     description:
       "A dark fantasy series exploring a world where supernatural beings condemn individuals to hell in public displays.",
-    image: "Image not provided.",
+    image: "../images/show5.webp",
   },
   {
     title: "The Law According to Lidia Poët",
     release_year: 2023,
     description:
       "An Italian historical drama about Italy's first female lawyer fighting for her place in the legal world.",
-    image: "Image not provided.",
+    image: "../images/show6.webp",
   },
   {
     title: "Children of the Church Steps",
     release_year: "Not Yet Confirmed",
     description: "No information currently available.",
-    image: "Not available.",
+    image: "../images/show7.webp",
   },
   {
     title: "Deceitful Love",
     release_year: 2024,
     description: "A drama centered on romantic entanglements and betrayals.",
-    image: "Image not provided.",
+    image: "../images/show8.webp",
   },
   {
     title: "Dragon Ball DAIMA",
     release_year: 2024,
     description:
       "A new series in the Dragon Ball universe, featuring adventures with characters rejuvenated to child forms.",
-    image: "Image not provided.",
+    image: "../images/show9.webp",
   },
 ];
 
-
 // get_data(data)
 // get_data(tv_shows);
-function get_data(m_other_data) {
-  m_other_data.forEach((movies) => {
-    const m_img = movies.photo;
+
+function get_data(data) {
+  slideshow_container.innerHTML = "";
+  data.forEach((item) => {
     const slide = document.createElement("div");
-    card.className = "slide";
-    card.innerHTML = `
-        <img src='${m_img}' alt=${title}>
-        `;
+    slide.className = "slide";
+    slide.innerHTML = `
+      <img src=${item.image}>
+    `;
     slideshow_container.appendChild(slide);
-    return slideshow_container;
   });
 }
 
-function get_data(show_English_data) {
-  show_English_data.forEach((movies) => {
-    const m_img = movies.photo;
-    const slide = document.createElement("div");
-    card.className = "slide";
-    card.innerHTML = `
-        <img src='${m_img}' alt=${title}>
-        `;
-    slideshow_container.appendChild(slide);
-    return slideshow_container;
-  });
-}
-
-function get_data(show_Other_data) {
-  show_Other_data.forEach((movies) => {
-    const m_img = movies.photo;
-    const slide = document.createElement("div");
-    card.className = "slide";
-    card.innerHTML = `
-        <img src='${m_img}' alt=${title}>
-        `;
-    slideshow_container.appendChild(slide);
-    return slideshow_container;
-  });
-}
-
-movies.addEventListener("click", () => {
-  movies.addEventListener("change", () => {
-    if (movies.value === "lang-1") {
+movies.addEventListener("change", () => {
+  switch (movies.value) {
+    case "lang-1":
       get_data(m_other_data);
-    } else if (movies.value === "lang-2") {
-      get_data(show_English);
-    } else {
-      get_data(show_Other);
-    }
-  });
+      break;
+
+    case "lang-2":
+      get_data(show_English_data);
+      break;
+
+    case "lang-3":
+      get_data(show_Other_data);
+      break;
+
+    default:
+      console.log("Error");
+      break;
+  }
 });
