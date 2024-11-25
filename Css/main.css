@@ -154,17 +154,18 @@ h2 {
 .slideshow-container {
     display: flex;
     align-items: center;
-    gap: 24px;
-    overflow: scroll;
+    gap: 18px;
+    overflow: hidden;
 }
 
 .slide {
     margin-top: 20px;
+    padding: 10px;
 }
 
 .slide img{
-    width: 150px;
-    height: 300px;
+    width: 130px;
+    height: 250px;
     border-radius: 12px;
 }
 
@@ -177,17 +178,46 @@ h2 {
 #left-btn{
     position: absolute;
     left: 9%;
+    top: 145%;
     translate: -50% -50%;
     height: 70px;
     border-radius: 16px;
+    border: none;
+    padding: 4px 8px;
+    background-color: rgb(94, 94, 94);
+    cursor: pointer;
 }
 
 #right-btn{
     position: absolute;
     right: 7%;
+    top: 145%;
     translate: -50% -50%;
     height: 70px;
     border-radius: 16px;
+    padding: 4px 8px;
+    border:  none;
+    background-color: rgb(94, 94, 94);  
+    cursor: pointer;
+}
+
+#left-btn:hover{
+    background-color: rgb(59, 59, 59); 
+}
+
+#right-btn:hover{
+    background-color: rgb(59, 59, 59);  
+}
+
+.style-i{
+    color: white;
+    font-size: 15px;
+}
+
+
+#btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 

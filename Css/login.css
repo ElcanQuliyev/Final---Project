@@ -217,3 +217,62 @@ select {
 }
 
 /* Footer end */
+
+
+
+/* General Responsiveness */
+@media (max-width: 1200px) {
+    .sign-in {
+        width: 50%; /* Daha dar ekranlar üçün genişlik azaldılır */
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-in {
+        width: 90%; /* Mobil cihazlar üçün genişlik */
+        padding: 30px;
+    }
+
+    .logo {
+        width: 120px; /* Kiçik ekranlarda logo ölçüsünün kiçilməsi */
+        height: 30px;
+    }
+
+    nav {
+        padding: 16px 30px; /* Header sahəsinin yığılması */
+    }
+
+    footer {
+        padding: 100px 20px 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 20px; /* Linklər arasındakı məsafə */
+    }
+
+    select {
+        font-size: 14px; /* Dili seçmə bölməsi üçün ölçü azaldılır */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Başlıq ölçüsünün azaldılması */
+    }
+
+    input,
+    button {
+        font-size: 14px; /* Form elementlərinin ölçüsünün kiçilməsi */
+        padding: 10px; /* Yastıqlama azalır */
+    }
+
+    .footer-links {
+        font-size: 12px; /* Footer linklərinin ölçüsü */
+    }
+
+    .header {
+        background-image: none; /* Background şəklini sil */
+        background-color: black; /* Fon rəngini qara et */
+    }
+}
