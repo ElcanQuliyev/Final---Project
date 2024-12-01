@@ -161,8 +161,11 @@ h2 {
 .slide {
     margin-top: 20px;
     padding: 10px;
+    /* display: none; */
 }
-
+/* .slide:first-child{
+    display: block;
+} */
 .slide img{
     width: 130px;
     height: 250px;
@@ -232,6 +235,7 @@ h2 {
 .cards {
     display: flex;
     gap: 16px;
+    margin-top: 20px;
 }
 
 .card {

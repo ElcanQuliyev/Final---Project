@@ -3,7 +3,9 @@ const m_Other = document.getElementById("m-Other");
 const show_English = document.getElementById("show-English");
 const show_Other = document.getElementById("show-Other");
 const slideshow_container = document.getElementById("slideshow-container");
-
+const leftButton = document.getElementById("left-btn");
+const rightButton = document.getElementById("right-btn");
+const slides = document.querySelectorAll('.slide')
 const m_other_data = [
   {
     title: "Family Pack",
@@ -225,3 +227,5 @@ movies.addEventListener("change", () => {
       break;
   }
 });
+
+console.log(slides)

@@ -137,7 +137,24 @@ h4 {
 
 .row-Area-2 {
     display: flex;
+    margin-bottom: 15px;
+}
 
+#hidden-description{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    display: none;
+}
+
+
+#hidden-description a{
+    color: #0080ff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#hidden-description a:hover{
+    text-decoration: underline;
 }
 
 .learn-more {
@@ -173,7 +190,7 @@ p {
 /* Footer start */
 
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 148px 45px 24px;
 }
 
