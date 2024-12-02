@@ -47,7 +47,7 @@ nav a:hover {
     align-items: center;
 }
 
-.reset-password {
+.remember-password {
     background-color: white;
     padding: 50px;
     width: 35%;
@@ -58,38 +58,17 @@ h1 {
     font-weight: 500;
 }
 
+
 form {
     display: flex;
-    gap: 16px;
+    gap: 30px;
     flex-direction: column;
 }
 
-.emailMe {
+.account {
     display: flex;
+    gap: 4px;
     flex-direction: column;
-    gap: 24px;
-}
-
-#email-btn {
-    padding: 14px;
-    background-color: #0080ff;
-    border: none;
-    color: white;
-    font-size: 16px;
-}
-
-#email-btn:hover {
-    background-color: #2793ff;
-}
-
-.emailMe a {
-    color: #0080ff;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.emailMe a:hover {
-    text-decoration: underline;
 }
 
 input {
@@ -98,17 +77,21 @@ input {
     border: 1px solid gray;
 }
 
-::placeholder {
-    font-weight: 500;
-    font-size: 16px;
+#find-btn {
+    background-color: #61b0ff;
+    border: none;
+    padding: 12px 20px;
 }
 
-.protect-page {
-    position: absolute;
-    left: 50%;
-    top: 105%;
-    translate: -50% -50%;
-    width: 35%;
+#cancel-btn {
+    background-color: #eaeaea;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+#cancel-btn:hover {
+    background-color: #e4e3e3;
 }
 
 #btn {
@@ -118,6 +101,14 @@ input {
     background-color: transparent;
     font-size: 16px;
     cursor: pointer;
+}
+
+.protect-page {
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    translate: -50% -50%;
+    width: 35%;
 }
 
 #hidden-description {

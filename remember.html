@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
     <link rel="stylesheet" href="Css/common.css" />
-    <link rel="stylesheet" href="Css/forgotPassword.css" />
+    <link rel="stylesheet" href="Css/remember.css" />
     <link
       rel="shortcut icon"
       href="images/images logo.png"
@@ -30,33 +30,32 @@
 
       <!-- Center section started -->
       <div class="center">
-        <div class="reset-password">
-          <h1>Update password, email or phone</h1>
-          <p>How would you like to reset your password?</p>
+        <div class="remember-password">
+          <h1>Forgot Email/Password</h1>
+          <p>
+            Please provide this information to help us find your account (all
+            fields required):
+          </p>
           <form action="">
-            <div class="up">
-              <input type="radio" name="radio-input1" id="radio-input1" />
-              <label for="">Email</label>
+            <div class="account">
+              <label for="">First name on account</label>
+              <input type="text" name="text-input1" id="text-input1" />
             </div>
-            <div class="bottom">
-              <input type="radio" name="radio-input2" id="radio-input2" />
-              <label for="">Text Massage (SMS)</label>
+
+            <div class="account">
+              <label for="">Last name on account</label>
+              <input type="text" name="text-input2" id="text-input2" />
+            </div>
+
+            <div class="account">
+              <label for="">Credit or debit card number on file</label>
+              <input type="text" name="text-input2" id="text-input2" />
+            </div>
+            <div class="buttons">
+              <button id="find-btn">Find Account</button>
+              <button id="cancel-btn">Cancel</button>
             </div>
           </form>
-          <p>
-            We will send you an email with instructions on how to reset your
-            password.
-          </p>
-          <div class="emailMe">
-            <input
-              type="text"
-              name="text-input"
-              id="text-input"
-              placeholder="name@example.com"
-            />
-            <button id="email-btn">Email Me</button>
-            <a href="remember.html">I don't remember my email or phone.</a>
-          </div>
         </div>
       </div>
       <div class="protect-page">
@@ -67,9 +66,10 @@
       </div>
       <span id="hidden-description">
         The information collected by Google reCAPTCHA is subject to the Google
-        <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a>, and
-        is used for providing, maintaining, and improving the reCAPTCHA service
-        and for general security purposes (it is not used for personalized
+        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms">Terms of Service</a>, and is
+        used for providing, maintaining, and improving the reCAPTCHA service and
+        for general security purposes (it is not used for personalized
         advertising by Google).
       </span>
     </div>
@@ -103,6 +103,6 @@
       </select>
     </footer>
 
-    <script src="JS/forgotPassword.js"></script>
+    <script src="JS/remember.js"></script>
   </body>
 </html>
