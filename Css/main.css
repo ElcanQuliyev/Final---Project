@@ -163,22 +163,32 @@ h2 {
     padding: 10px;
     /* display: none; */
 }
+
 /* .slide:first-child{
     display: block;
 } */
-.slide img{
+.slide img {
     width: 130px;
     height: 250px;
     border-radius: 12px;
+    position: relative;
 }
 
-.slide img:hover{
+span {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.slide img:hover {
     scale: 1.1;
     transition: 0.3s;
 }
 
 
-#left-btn{
+#left-btn {
     position: absolute;
     left: 9%;
     top: 145%;
@@ -191,7 +201,7 @@ h2 {
     cursor: pointer;
 }
 
-#right-btn{
+#right-btn {
     position: absolute;
     right: 7%;
     top: 145%;
@@ -199,20 +209,20 @@ h2 {
     height: 70px;
     border-radius: 16px;
     padding: 4px 8px;
-    border:  none;
-    background-color: rgb(94, 94, 94);  
+    border: none;
+    background-color: rgb(94, 94, 94);
     cursor: pointer;
 }
 
-#left-btn:hover{
-    background-color: rgb(59, 59, 59); 
+#left-btn:hover {
+    background-color: rgb(59, 59, 59);
 }
 
-#right-btn:hover{
-    background-color: rgb(59, 59, 59);  
+#right-btn:hover {
+    background-color: rgb(59, 59, 59);
 }
 
-.style-i{
+.style-i {
     color: white;
     font-size: 15px;
 }
@@ -374,3 +384,99 @@ footer p {
 }
 
 /* Footer end */
+
+
+/* Responsive tasarım için medya sorguları */
+
+/* 768px ve altındaki cihazlar (tabletler ve küçük ekranlar) */
+@media (max-width: 768px) {
+
+    .right-nav {
+        margin-top: 16px;
+    }
+
+    .center h1 {
+        font-size: 36px;
+    }
+
+    .center p {
+        font-size: 16px;
+    }
+
+    .center h3 {
+        font-size: 14px;
+    }
+
+    .row-Area {
+        flex-direction: column;
+    }
+
+    .row-Area input {
+        width: 90%;
+    }
+
+    #btn {
+        width: 90%;
+    }
+
+    .content-container {
+        padding: 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    footer .links {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* 480px ve altındaki cihazlar (mobil cihazlar) */
+@media (max-width: 480px) {
+    nav {
+        padding: 16px;
+    }
+
+    .center h1 {
+        font-size: 28px;
+    }
+
+    .center p {
+        font-size: 14px;
+    }
+
+    .center h3 {
+        font-size: 12px;
+    }
+
+    .row-Area input {
+        font-size: 14px;
+    }
+
+    .row-Area button {
+        font-size: 16px;
+    }
+
+    .cards {
+        gap: 16px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer .links {
+        gap: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}

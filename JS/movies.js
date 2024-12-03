@@ -228,4 +228,4 @@ movies.addEventListener("change", () => {
   }
 });
 
-console.log(slides)
+
