@@ -5,7 +5,7 @@ const show_Other = document.getElementById("show-Other");
 const slideshow_container = document.getElementById("slideshow-container");
 const leftButton = document.getElementById("left-btn");
 const rightButton = document.getElementById("right-btn");
-const slides = document.querySelectorAll('.slide')
+const slides = document.querySelectorAll(".slide");
 const m_other_data = [
   {
     title: "Family Pack",
@@ -225,6 +225,14 @@ movies.addEventListener("change", () => {
     default:
       console.log("Error");
       break;
+  }
+
+  if (movies.value !== "select") {
+    leftButton.style.display = "block";
+    rightButton.style.display = "block";
+  } else {
+    leftButton.style.display = "none";
+    rightButton.style.display = "none";
   }
 });
 
