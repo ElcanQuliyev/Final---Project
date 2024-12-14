@@ -27,3 +27,17 @@ btn.addEventListener("click", () => {
 //     alert("No email found. Redirecting to the start page.");
 //   }
 // });
+
+// const btn = document.getElementById("getStartedBtn");
+// const gmailDiv = document.getElementById("gmail");
+
+// btn.addEventListener("click", () => {
+//   const email = document.getElementById("emailInput").value;
+//   const storedEmail = localStorage.getItem("userEmail");
+//   if (email) {
+//     window.location.href = "setPassword.html";
+//     gmailDiv.textContent = storedEmail;
+//   } else {
+//     alert("Please enter a valid email!");
+//   }
+// });

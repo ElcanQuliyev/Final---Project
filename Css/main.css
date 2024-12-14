@@ -162,12 +162,8 @@ h2 {
 .slide {
     margin-top: 20px;
     padding: 10px;
-    /* display: none; */
 }
 
-/* .slide:first-child{
-    display: block;
-} */
 .slide img {
     width: 130px;
     height: 250px;
@@ -346,6 +342,7 @@ ul li button:hover {
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
+    text-decoration: none;
 }
 
 #started-btn:hover {
@@ -430,7 +427,7 @@ footer p {
         gap: 20px;
     }
 
-    .card{
+    .card {
         width: 100%;
     }
 
