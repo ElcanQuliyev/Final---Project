@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+.content {
+    display: flex;
+}
+
+.left-content {
+    width: 5%;
+}
+
+.right-content {
+    overflow: hidden;
+}
+
+
+/* Left content started */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    padding: 0px 0px 0px 15px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px;
+}
+
+a:hover {
+    border-bottom: 2px solid red;
+}
+
+/* Left content end */
+
+h1{
+    color: white;
+}
