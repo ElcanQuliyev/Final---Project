@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
 }
 
@@ -27,7 +27,7 @@ body{
     padding: 0px 0px 0px 15px;
 }
 
-a {
+.links a {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -35,12 +35,34 @@ a {
     padding: 0px;
 }
 
-a:hover {
+.links a:hover {
     border-bottom: 2px solid red;
 }
 
 /* Left content end */
 
-h1{
+h1 {
     color: white;
+    padding: 0px 0px 0px 15px;
+}
+
+.movies {
+    padding: 0px 0px 0px 15px;
+}
+
+.movie {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.movie a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.movie a img {
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
 }
