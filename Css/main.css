@@ -156,12 +156,15 @@ h2 {
     display: flex;
     align-items: center;
     gap: 18px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: auto;
+    scrollbar-color: red white;
 }
 
 .slide {
     margin-top: 20px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .slide img {
@@ -185,7 +188,7 @@ span {
 }
 
 
-#left-btn {
+/* #left-btn {
     position: absolute;
     left: 9%;
     top: 145%;
@@ -219,17 +222,17 @@ span {
 
 #right-btn:hover {
     background-color: rgb(59, 59, 59);
-}
+} */
 
 .style-i {
     color: white;
     font-size: 15px;
 }
 
-#btn:hover {
+/* #btn:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
-}
+} */
 
 
 

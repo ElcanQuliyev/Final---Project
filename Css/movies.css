@@ -137,9 +137,43 @@ button {
     padding: 0px 10px 10px 20px;
 }
 
+/* #left-arrow-1 {
+    position: absolute;
+    left: 6%;
+    top: 83%;
+    z-index: 10;
+    border: none;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#left-arrow-1 i {
+    font-size: 20px;
+    color: gray;
+}
+
+#right-arrow-1 {
+    position: absolute;
+    right: 1%;
+    top: 83%;
+    z-index: 10;
+    border: none;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#right-arrow-1 i {
+    font-size: 20px;
+    color: gray;
+} */
+
 .movie-1 {
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
+    overflow: auto;
+    scrollbar-color: red white;
 }
 
 h2 {
@@ -156,16 +190,20 @@ h2 {
 
 .card-1 {
     cursor: pointer;
+    position: relative;
 }
 
 .card-1 img {
-    width: 160px;
-    height: 220px;
+    width: 150px;
+    height: 210px;
+    margin-bottom: 10px;
 }
 
 .movie-2 {
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
+    overflow: auto;
+    scrollbar-color: red white;
 }
 
 #cards-2 {
@@ -179,13 +217,16 @@ h2 {
 }
 
 .card-2 img {
-    width: 160px;
-    height: 220px;
+    width: 150px;
+    height: 210px;
+    margin-bottom: 10px;
 }
 
 .movie-3 {
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
+    overflow: auto;
+    scrollbar-color: red white;
 }
 
 #cards-3 {
@@ -199,8 +240,9 @@ h2 {
 }
 
 .card-3 img {
-    width: 160px;
-    height: 220px;
+    width: 150px;
+    height: 210px;
+    margin-bottom: 10px;
 }
 
 /* Right content Ended */
