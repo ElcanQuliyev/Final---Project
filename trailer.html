@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Css/trailer.css" />
+    <link
+      rel="shortcut icon"
+      href="images/images logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="left-content">
+        <div class="links">
+          <a href="search.html"><i class="fa-brands fa-searchengin"></i></a>
+          <a href="movies.html"><i class="fa-solid fa-house"></i></a>
+          <a href="trailer.html"><i class="fa-solid fa-clapperboard"></i></a>
+          <a href="#"><i class="fa-solid fa-tv"></i></a>
+          <a href="#"><i class="fa-solid fa-chart-line"></i></a>
+          <a href="#"><i class="fa-solid fa-plus"></i></a>
+          <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="videos">
+          <video id="trailerVideo" width="800" controls autoplay></video>
+        </div>  
+      </div>
+    </div>
+
+    <script>
+      // URL-dən video faylını al
+      const urlParams = new URLSearchParams(window.location.search);
+      const videoFile = urlParams.get("video") || "video/.videos-1.mp4";
+
+      // Videonu göstər
+      document.getElementById("trailerVideo").src = videoFile;
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/7972087a8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

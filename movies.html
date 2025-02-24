@@ -10,6 +10,8 @@
       rel="shortcut icon"
       href="images/images logo.png"
       type="image/x-icon"
+      git
+      ad
     />
   </head>
   <body>
@@ -18,7 +20,7 @@
         <div class="links">
           <a href="search.html"><i class="fa-brands fa-searchengin"></i></a>
           <a href="movies.html"><i class="fa-solid fa-house"></i></a>
-          <a href="#"><i class="fa-solid fa-clapperboard"></i></a>
+          <a href="trailer.html"><i class="fa-solid fa-clapperboard"></i></a>
           <a href="#"><i class="fa-solid fa-tv"></i></a>
           <a href="#"><i class="fa-solid fa-chart-line"></i></a>
           <a href="#"><i class="fa-solid fa-plus"></i></a>
@@ -69,6 +71,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document
+        .getElementById("watch-trailer")
+        .addEventListener("click", function () {
+          window.location.href = "trailer.html?video=videos/video-1.mp4";
+        });
+    </script>
 
     <script src="JS/movies-1.js"></script>
     <script src="JS/movies-2.js"></script>
