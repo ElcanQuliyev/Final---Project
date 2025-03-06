@@ -3,9 +3,9 @@ const m_Other = document.getElementById("m-Other");
 const show_English = document.getElementById("show-English");
 const show_Other = document.getElementById("show-Other");
 const slideshow_container = document.getElementById("slideshow-container");
-// const leftButton = document.getElementById("left-btn");
-// const rightButton = document.getElementById("right-btn");
-// const slides = document.querySelectorAll(".slide");
+const leftButton = document.getElementById("left-btn");
+const rightButton = document.getElementById("right-btn");
+const slides = document.querySelectorAll(".slide");
 const m_other_data = [
   {
     title: "Family Pack",
@@ -236,43 +236,13 @@ movies.addEventListener("change", () => {
   }
 });
 
-// const track = document.getElementById("slideshow-container");
-// const slides = Array.from(track.children);
-// evButton = document.getElementById("prev");
-// // const nextButton = document.getElementById("next");
 
-// const slideWidth = slides[0].getBoundingClientRect().width;
+rightButton.addEventListener("click", () => {
+  slideshow_container.style.scrollBehavior = "smooth";
+  slideshow_container.scrollLeft += 900;
+});
 
-// // Şəkillərin düzgün şəkildə yan-yana düzülməsi 
-// slides.forEach((slide, index) => {
-//   slide.style.left = slideWidth * index + "px";
-// });
-
-// const moveToSlide = (track, currentSlide, targetSlide) => {
-//   track.style.transform = "translateX(-" + targetSlide.style.left + ")";
-//   currentSlide.classList.remove("current-slide");
-//   targetSlide.classList.add("current-slide");
-// };
-
-// // Next düyməsi üçün hadisə dinləyicisi
-// rightButton.addEventListener("click", () => {
-//   const currentSlide = track.querySelector(".current-slide");
-//   const nextSlide = currentSlide.nextElementSibling;
-
-//   if (nextSlide) {
-//     moveToSlide(track, currentSlide, nextSlide);
-//   }
-// });
-
-// // Prev düyməsi üçün hadisə dinləyicisi
-// leftButton.addEventListener("click", () => {
-//   const currentSlide = track.querySelector(".current-slide");
-//   const prevSlide = currentSlide.previousElementSibling;
-
-//   if (prevSlide) {
-//     moveToSlide(track, currentSlide, prevSlide);
-//   }
-// });
-//  const leftButton = document.getElementById("left-btn");
-// const rightButton = document.getElementById("right-btn");
-// // const pr
+leftButton.addEventListener("click", () => {
+  slideshow_container.style.scrollBehavior = "smooth";
+  slideshow_container.scrollLeft -= 900;
+});

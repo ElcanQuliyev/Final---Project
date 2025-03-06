@@ -1,4 +1,6 @@
 const cardsDiv_1 = document.getElementById("cards-1");
+const left_1 = document.getElementById("left-arrow-1");
+const right_1 = document.getElementById("right-arrow-1");
 
 const m_other_data = [
   {
@@ -79,3 +81,13 @@ function get_data(data) {
 
 // Initialize with data
 get_data(m_other_data);
+
+right_1.addEventListener("click", () => {
+  cardsDiv_1.style.scrollBehavior = "smooth";
+  cardsDiv_1.scrollLeft += 900;
+});
+
+left_1.addEventListener("click", () => {
+  cardsDiv_1.style.scrollBehavior = "smooth";
+  cardsDiv_1.scrollLeft -= 900;
+});

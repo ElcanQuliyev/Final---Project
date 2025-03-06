@@ -156,9 +156,9 @@ h2 {
     display: flex;
     align-items: center;
     gap: 18px;
-    /* overflow: hidden; */
-    overflow: auto;
-    scrollbar-color: red white;
+    overflow: hidden;
+    /* overflow: auto;
+    scrollbar-color: red white; */
 }
 
 .slide {
@@ -188,7 +188,7 @@ span {
 }
 
 
-/* #left-btn {
+#left-btn {
     position: absolute;
     left: 9%;
     top: 145%;
@@ -222,7 +222,7 @@ span {
 
 #right-btn:hover {
     background-color: rgb(59, 59, 59);
-} */
+}
 
 .style-i {
     color: white;

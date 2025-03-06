@@ -1,4 +1,6 @@
 const cardsDiv_2 = document.getElementById("cards-2");
+const left_2 = document.getElementById("left-arrow-2");
+const right_2 = document.getElementById("right-arrow-2");
 
 const show_English_data = [
   {
@@ -60,16 +62,25 @@ const show_English_data = [
   },
 ];
 
-
-function get_data(data){
-    cardsDiv_2.innerHTML = "";
-    data.forEach((item) => {
-      const card = document.createElement("div");
-      card.className = "card-2";
-      card.innerHTML = `
+function get_data(data) {
+  cardsDiv_2.innerHTML = "";
+  data.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "card-2";
+    card.innerHTML = `
         <img src="${item.image}" alt="${item.title}">`;
-      cardsDiv_2.appendChild(card);
-    });
+    cardsDiv_2.appendChild(card);
+  });
 }
 
 get_data(show_English_data);
+
+right_2.addEventListener("click", () => {
+  cardsDiv_2.style.scrollBehavior = "smooth";
+  cardsDiv_2.scrollLeft += 900;
+});
+
+left_2.addEventListener("click", () => {
+  cardsDiv_2.style.scrollBehavior = "smooth";
+  cardsDiv_2.scrollLeft -= 900;
+});

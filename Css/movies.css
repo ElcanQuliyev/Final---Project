@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+/* .right-content {
+    overflow-x: auto;
+} */
+
 
 /* Left content started */
 .links {
@@ -137,7 +141,7 @@ button {
     padding: 0px 10px 10px 20px;
 }
 
-/* #left-arrow-1 {
+#left-arrow-1 {
     position: absolute;
     left: 6%;
     top: 83%;
@@ -167,19 +171,114 @@ button {
 #right-arrow-1 i {
     font-size: 20px;
     color: gray;
-} */
+}
+
+/* button-2 */
+
+#left-arrow-2 {
+    position: absolute;
+    left: 6%;
+    top: 130%;
+    z-index: 10;
+    border: none;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#left-arrow-2 i {
+    font-size: 20px;
+    color: gray;
+}
+
+#right-arrow-2 {
+    position: absolute;
+    right: 1%;
+    top: 130%;
+    z-index: 10;
+    border: none;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#right-arrow-2 i {
+    font-size: 20px;
+    color: gray;
+}
+
+/* button - 3 */
+
+#left-arrow-3 {
+    position: absolute;
+    left: 6%;
+    top: 177%;
+    z-index: 10;
+    border: none;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#left-arrow-3 i {
+    font-size: 20px;
+    color: gray;
+}
+
+#right-arrow-3 {
+    position: absolute;
+    right: 1%;
+    top: 177%;
+    z-index: 10;
+    border: none;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#right-arrow-3 i {
+    font-size: 20px;
+    color: gray;
+}
 
 .movie-1 {
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
-    overflow: auto;
-    scrollbar-color: red white;
 }
 
 h2 {
     color: white;
     margin-top: 0px;
     font-size: 22px;
+}
+
+/* #cards-1,
+#cards-2,
+#cards-3 {
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+} */
+
+#cards-1,
+#cards-2,
+#cards-3 {
+    overflow-x: scroll;
+    display: flex;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* Internet Explorer və Edge üçün */
+    scrollbar-width: none;
+    /* Firefox üçün */
+}
+
+#cards-1::-webkit-scrollbar,
+#cards-2::-webkit-scrollbar,
+#cards-3::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari və Opera üçün */
 }
 
 #cards-1 {
@@ -202,8 +301,6 @@ h2 {
 .movie-2 {
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
-    overflow: auto;
-    scrollbar-color: red white;
 }
 
 #cards-2 {
@@ -225,8 +322,6 @@ h2 {
 .movie-3 {
     padding: 15px 0px 0px 0px;
     margin-bottom: 20px;
-    overflow: auto;
-    scrollbar-color: red white;
 }
 
 #cards-3 {
